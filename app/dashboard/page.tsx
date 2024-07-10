@@ -1,3 +1,4 @@
+import AuthButton from '@/components/AuthButton'
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 
@@ -14,12 +15,19 @@ export default async function Dashboard() {
   }
 
   return (
-    <div className='flex flex-col gap-4'>
-      {componentLibs!.map((componentLib) => (
-        <div className='p-10 mx-4 border border-neutral-300 rounded-xl hover:bg-neutral-100 hover:cursor-pointer' key={componentLib.id}>
-          <p>{componentLib.title}</p>
-        </div>
-      ))}
-    </div>
+    <>
+      <AuthButton />
+      <div className="flex flex-col gap-4 pt-32">
+        <h1 className='font-bold text-3xl'>Fetched Component Libs</h1>
+        {componentLibs!.map((componentLib) => (
+          <div
+            className="p-10 border border-neutral-300 rounded-xl hover:bg-neutral-100 hover:cursor-pointer"
+            key={componentLib.id}
+          >
+            <p>{componentLib.title}</p>
+          </div>
+        ))}
+      </div>
+    </>
   )
 }

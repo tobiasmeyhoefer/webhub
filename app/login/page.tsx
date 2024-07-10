@@ -52,7 +52,7 @@ export default function Login({
   }
 
   return (
-    <div className='h-full w-screen flex justify-center'>
+    <div className='h-full flex justify-center'>
       <div className="flex-1 flex flex-col w-full px-8 sm:max-w-md justify-center gap-2">
         <Link
           href="/"

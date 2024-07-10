@@ -20,6 +20,10 @@
   }
 }
 
+/* html, body {
+  height: -webkit-fill-available;
+} */
+
 @layer base {
   * {
     @apply border-foreground/20;
