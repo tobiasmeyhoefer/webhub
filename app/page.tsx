@@ -1,18 +1,21 @@
-import AuthButton from '@/components/AuthButton'
-import Link from 'next/link'
+import AuthButton from "@/components/AuthButton"
+import Link from "next/link"
 
 export default async function Index() {
   return (
     <>
-        <Link className='absolute top-8 left-8' href={'https://buymeacoffee.com/tobiasmeyhoefer'}>
-          Buy me a coffee
-        </Link>
+      <Link
+        className="absolute left-8 top-8"
+        href={"https://buymeacoffee.com/tobiasmeyhoefer"}
+      >
+        Buy me a tea
+      </Link>
       <AuthButton />
-      <div className="h-full flex justify-center items-center flex-col">
-        <h1 className="font-bold md:text-6xl text-3xl leading-normal">
+      <div className="flex h-full flex-col items-center justify-center">
+        <h1 className="text-3xl font-bold leading-normal md:text-6xl">
           Welcome at DevHub
         </h1>
-        <p className="md:text-xl text-sm mb-10">made by @tobiasmeyhoefer</p>
+        <p className="mb-10 text-sm md:text-xl">made by @tobiasmeyhoefer</p>
         <Link className="text-sm" href="/dashboard">
           Dashboard
         </Link>
