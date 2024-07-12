@@ -18,7 +18,7 @@ export default async function Dashboard() {
   return (
     <>
       <AuthButton />
-      <div className="flex flex-col gap-4 pt-32">
+      {/* <div className="flex flex-col gap-4 pt-32">
         <h1 className='font-bold text-3xl'>Fetched Component Libs</h1>
         {componentLibs!.map((componentLib) => (
           <div
@@ -28,7 +28,8 @@ export default async function Dashboard() {
             <p>{componentLib.title}</p>
           </div>
         ))}
-      </div>
+      </div> */}
+      <p>hello</p>
     </>
   )
 }
