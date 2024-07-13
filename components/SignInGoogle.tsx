@@ -10,14 +10,17 @@ const SignInGoogle = () => {
         action={async () => {
           "use server"
           const supabase = createClient()
+          const redirectUrl = process.env.NODE_ENV === "production" ? `http://localhost:3000/auth/callback` : `https://webhub-cyan.vercel.app/auth/callback`
+          console.log(redirectUrl)
           const { data, error } = await supabase.auth.signInWithOAuth({
             provider: "google",
             options: {
-              redirectTo: process.env.NODE_ENV === "development" ? `http://localhost:3000/auth/callback` : `https://webhub-cyan.vercel.app/auth/callback`,
+              redirectTo: redirectUrl
             },
           })
 
           if (data.url) {
+            console.log("data: " + data.url)
             redirect(data.url) // use the redirect API for your server framework
           }
           
