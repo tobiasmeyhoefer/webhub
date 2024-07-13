@@ -35,7 +35,7 @@ export default function RootLayout({
         <header>
           <NavBar/>
         </header>
-        <main className="h-svh w-screen max-w-[1000px]">{children}</main>
+        <main className="h-svh w-screen md:max-w-[1000px] max-md:px-4">{children}</main>
         <footer>
           <Additionals/>
         </footer>

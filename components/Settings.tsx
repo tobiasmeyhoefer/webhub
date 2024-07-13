@@ -10,6 +10,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import SettingsIcon from "./icons/SettingsIcon"
+import LogoutButton from "./LogoutButton"
 
 export function Settings() {
   return (
@@ -19,16 +20,16 @@ export function Settings() {
           <SettingsIcon />
         </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="w-full rounded-lg">
         <DialogHeader>
           <DialogTitle>Settings</DialogTitle>
           <DialogDescription>Welcome to your settings</DialogDescription>
         </DialogHeader> 
-        <div>
-            nothing to set up here
+        <div className="flex justify-center">
+          <LogoutButton/>
         </div>
         <DialogFooter>
-          <DialogClose>cancel</DialogClose>
+          <DialogClose><Button variant={"outline"}>cancel</Button></DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>
