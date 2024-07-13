@@ -12,8 +12,10 @@ export default async function LogoutButton() {
   const signOut = async () => {
     "use server"
 
+    console.log("signing out")
     const supabase = createClient()
     await supabase.auth.signOut()
+    console.log("test")
     return redirect("/")
   }
 

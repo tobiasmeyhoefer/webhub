@@ -24,12 +24,16 @@ export function Settings() {
         <DialogHeader>
           <DialogTitle>Settings</DialogTitle>
           <DialogDescription>Welcome to your settings</DialogDescription>
-        </DialogHeader> 
+        </DialogHeader>
         <div className="flex justify-center">
-          <LogoutButton/>
+          <DialogClose>
+            <LogoutButton />
+          </DialogClose>
         </div>
         <DialogFooter>
-          <DialogClose><Button variant={"outline"}>cancel</Button></DialogClose>
+          <DialogClose>
+            <Button variant={"outline"}>cancel</Button>
+          </DialogClose>
         </DialogFooter>
       </DialogContent>
     </Dialog>
