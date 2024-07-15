@@ -9,7 +9,7 @@ const NavBarMobile = () => {
       <div className="flex h-full items-center justify-around">
         <Link
           className="flex h-full w-full justify-center rounded-lg p-2 transition-all items-center"
-          href="/store"
+          href="/hub"
         >
           <FolderIcon />
         </Link>
@@ -18,7 +18,7 @@ const NavBarMobile = () => {
           className="flex h-full w-full items-center justify-center"
         >
           <h1 className="text-xl font-bold text-zinc-700 transition-all">
-            webhub
+            devhub
           </h1>
         </Link>
         <div className="flex w-full h-full">

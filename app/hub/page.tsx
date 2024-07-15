@@ -1,7 +1,7 @@
-const Store = () => {
+const Hub = () => {
   return (
     <div>
-      <h1 className="pt-40 text-3xl font-bold leading-loose">Store</h1>
+      <h1 className="pt-40 text-3xl font-bold leading-loose">Your Hub</h1>
       <p className="leading-normal">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat
         cumque quo praesentium fugit, eius quae a nisi fugiat, enim repudiandae
@@ -13,4 +13,4 @@ const Store = () => {
   )
 }
 
-export default Store
+export default Hub
