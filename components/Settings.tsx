@@ -16,7 +16,7 @@ export function Settings() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="cursor-pointer rounded-lg p-2 transition-all hover:bg-zinc-300">
+        <div className="max-md:flex max-md:h-full max-md:w-full cursor-pointer items-center justify-center rounded-lg p-2 transition-all md:hover:bg-zinc-300">
           <SettingsIcon />
         </div>
       </DialogTrigger>

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import StoreIcon from "./icons/StoreIcon"
+import FolderIcon from "./icons/FolderIcon"
 import { Settings } from "./Settings"
 import { BorderBeam } from "./magicui/border-beam"
 
@@ -10,7 +10,7 @@ const NavBar = () => {
         className="rounded-lg p-2 transition-all hover:bg-zinc-300"
         href="/store"
       >
-        <StoreIcon />
+        <FolderIcon />
       </Link>
       <Link href="/">
         <h1 className="text-xl font-bold text-zinc-700 transition-all hover:text-zinc-800">

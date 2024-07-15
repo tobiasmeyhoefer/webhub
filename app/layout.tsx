@@ -3,6 +3,7 @@ import "./globals.css"
 import { cn } from "@/lib/utils"
 import NavBar from "@/components/NavBar"
 import Additionals from "@/components/Additionals"
+import NavBarMobile from "@/components/NavBarMobile"
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -33,12 +34,18 @@ export default function RootLayout({
         )}
       >
         <header>
-          <NavBar/>
+          <div className="max-md:hidden">
+            <NavBar/> 
+          </div>
+          <div className="md:hidden">
+            <NavBarMobile/>
+          </div>
         </header>
+
         <main className="h-svh w-screen md:max-w-[1000px] max-md:px-4">{children}</main>
-        <footer>
+        {/* <footer>
           <Additionals/>
-        </footer>
+        </footer> */}
       </body>
     </html>
   )
