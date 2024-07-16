@@ -29,12 +29,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "flex min-h-svh justify-center overflow-hidden bg-background text-foreground",
+          "flex flex-col min-h-svh items-center overflow-hidden bg-background text-foreground",
           inter.variable,
         )}
       >
         <header>
-          <div className="max-md:hidden">
+          <div className="max-md:hidden h-24 flex items-center">
             <NavBar/> 
           </div>
           <div className="md:hidden">
@@ -42,7 +42,7 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className="h-svh w-screen md:max-w-[1000px] max-md:px-4">{children}</main>
+        <main className="h-svh w-screen md:max-w-[1200px] max-md:px-4 px-4">{children}</main>
         {/* <footer>
           <Additionals/>
         </footer> */}

@@ -5,7 +5,7 @@ import { BorderBeam } from "./magicui/border-beam"
 
 const NavBar = () => {
   return (
-    <nav className="absolute z-10 left-0 right-0 top-10 ml-auto mr-auto flex h-12 w-80 items-center justify-around rounded-full border border-zinc-200 bg-zinc-100/30 drop-shadow-lg backdrop-blur-md backdrop-filter md:w-96">
+    <nav className="z-10 ml-auto mr-auto flex h-12 w-80 items-center justify-around rounded-full border border-zinc-200 bg-zinc-100/30 drop-shadow-lg backdrop-blur-md backdrop-filter md:w-96">
       <Link
         className="rounded-lg p-2 transition-all hover:bg-zinc-300"
         href="/hub"

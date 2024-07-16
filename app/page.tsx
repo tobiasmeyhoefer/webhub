@@ -1,19 +1,13 @@
-import DotPattern from "@/components/magicui/dot-pattern";
-import { cn } from "@/lib/utils";
+import { DevHubCard } from "@/components/DevHubCard"
 
 export default async function Index() {
+
+
+
   return (
-    <>
-      <DotPattern
-        width={20}
-        height={20}
-        cx={1}
-        cy={1}
-        cr={1}
-        className={cn(
-          "[mask-image:linear-gradient(to_bottom_right,white,transparent)] "
-        )}
-      />
-    </>
+    <div className="flex gap-4 flex-wrap w-full h-[calc(100svh-96px)] mt-4 bg-green-200">
+      <DevHubCard title="TailwindCSS" description="first class styling" href="https://tailwindcss.com/" imageUrl="https://www.svgrepo.com/show/374118/tailwind.svg" />
+      <DevHubCard title="Typescript" description="first class language for webdev" href="https://www.typescriptlang.org/" imageUrl="https://www.svgrepo.com/show/374146/typescript-official.svg" />
+    </div>
   )
 }
