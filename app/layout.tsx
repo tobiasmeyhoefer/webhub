@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 import NavBar from "@/components/NavBar"
 import Additionals from "@/components/Additionals"
 import NavBarMobile from "@/components/NavBarMobile"
+import Script from "next/script"
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -46,6 +47,7 @@ export default function RootLayout({
         {/* <footer>
           <Additionals/>
         </footer> */}
+        <Script src="scripts/dragAndDrop.js" />
       </body>
     </html>
   )

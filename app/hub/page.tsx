@@ -1,15 +1,27 @@
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu"
+
 const Hub = () => {
   return (
-    <div>
-      <h1 className="pt-40 text-3xl font-bold leading-loose">Your Hub</h1>
-      <p className="leading-normal">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat
-        cumque quo praesentium fugit, eius quae a nisi fugiat, enim repudiandae
-        autem soluta veritatis animi molestiae ratione dignissimos eveniet unde
-        amet dolore, qui blanditiis nulla voluptate. Reiciendis fuga repudiandae
-        facere!
-      </p>
-    </div>
+    <>
+      <div>
+        <ContextMenu>
+          <ContextMenuTrigger className="absolute inset-0"></ContextMenuTrigger>
+          <ContextMenuContent>
+            <ContextMenuItem>New Link</ContextMenuItem>
+            <ContextMenuItem>New Folder</ContextMenuItem>
+          </ContextMenuContent>
+        </ContextMenu>
+      </div>
+
+      <div id="container">
+        <div id="card" className="w-24 h-24 bg-red-400 cursor-pointer rounded-lg fixed"></div>
+      </div>
+    </>
   )
 }
 
